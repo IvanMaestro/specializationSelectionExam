@@ -27,3 +27,19 @@ string[] CheckElemLenght(string[] arr)
     return newText;
 }
 
+void PrintArray(string[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
+    {        
+        if (i < array.Length - 1) Console.Write($"{array[i]}, ");
+    }
+    Console.Write(array[array.Length - 1]);
+    Console.Write("]");
+}
+
+string[] result = CheckElemLenght(data);
+PrintArray(data);
+Console.Write(" => ");
+PrintArray(result);
+
