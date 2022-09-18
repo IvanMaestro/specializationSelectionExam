@@ -1,8 +1,6 @@
-﻿Console.Write("Input text: ");
-string text = Console.ReadLine()
-                .Replace(",","")
-                .Replace(".","");
-
+﻿Console.Write("Enter an array of strings separated by a space: ");
+string text = Console.ReadLine();
+       
 string[] data = text.Split(' ');
 
 string[] CheckElemLenght(string[] arr)
